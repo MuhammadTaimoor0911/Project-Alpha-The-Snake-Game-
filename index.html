@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snake</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Snake</h1>
+<div class="hud">
+<div>Score: <span id="score">0</span></div>
+<div class="hint">Arrow/WASD to move. Esc: pause. Enter: start/restart.</div>
+</div>
+<canvas id="game" width="600" height="600"></canvas>
+<div id="menu" class="overlay">
+  <div class="menu-card">
+    <div class="title">Snake</div>
+    <div class="desc">Eat food, avoid walls and yourself.</div>
+    <div class="options">
+      <button id="startBtn" class="btn">Start Game</button>
+      <button id="diffBtn" class="btn secondary">Change Difficulty</button>
+    </div>
+  </div>
+</div>
+<div id="difficultyMenu" class="overlay">
+  <div class="menu-card">
+    <div class="title">Difficulty</div>
+    <div class="options">
+      <button id="easyBtn" class="btn">Easy</button>
+      <button id="mediumBtn" class="btn">Medium</button>
+      <button id="hardBtn" class="btn">Hard</button>
+    </div>
+    <div class="options">
+      <button id="backMainBtn" class="btn secondary">Back</button>
+    </div>
+  </div>
+</div>
+<div id="pauseMenu" class="overlay" style="display:none">
+  <div class="menu-card">
+    <div class="title">Paused</div>
+    <div class="options">
+      <button id="resumeBtn" class="btn">Resume</button>
+      <button id="quitBtn" class="btn secondary">Quit to Main Menu</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+<script src="shrink.js"></script>
+<script src="countdown.js"></script>
+<script src="powerups.js"></script>
+<script src="obstacles.js"></script>
+<script src="smooth.js"></script>
+<script src="countdown_overlay.js"></script>
+<script src="control.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>

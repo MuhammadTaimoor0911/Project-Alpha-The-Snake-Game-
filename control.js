@@ -1,0 +1,1 @@
+const _setDir=setDir;function forceAdvance(){if(state!=="playing")return;const now=performance.now();if(lastMove&&now-lastMove<40)return;const hx=snake[0].x*size+size/2;const hy=snake[0].y*size+size/2;addDirectionalParticle(hx,hy,nextDir.x,nextDir.y,"rgba(60,220,120,0.9)");updateMove();lastMove=now}setDir=function(nx,ny){_setDir(nx,ny);forceAdvance()};
